@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title> Lista de Medicos </title>
+</head>
+
+<body>
+    <h1>Lista de Médicos </h1>
+
+    <ul>
+        {% for medico in medicos %}
+            <li>
+                Nome: {{ medico.nome }} - CRM: {{ medico.crm }} - Idade: {{ medico.idade }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
