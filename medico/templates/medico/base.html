@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Médico - {{ medico.nome }}</title>
+</head>
+<body>
+    <h1>{{ medico.nome }}</h1>
+    <p>CRM: {{ medico.crm }}</p>
+    <p>Idade: {{ medico.idade }}</p>
+    {% if medico.imagem %}
+        <img src="{{ medico.imagem.url }}" alt="{{ medico.nome }}">
+    {% endif %}
+</body>
+</html>
