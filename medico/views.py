@@ -3,7 +3,7 @@
 from django.shortcuts import render
 from .models import Medico
 
-# views.py
+
 
 def lista_medicos(request):
     medicos = Medico.objects.all()

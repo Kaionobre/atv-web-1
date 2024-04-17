@@ -12,7 +12,9 @@
         {% for medico in medicos %}
             <li>
                 
-                Nome: {{ medico.nome }} - CRM: {{ medico.crm }} - Idade: {{ medico.idade }}
+                <a href="{% url 'medico_detalhe' pk=medico.pk %}">
+                    Nome: {{ medico.nome }} - CRM: {{ medico.crm }} - Idade: {{ medico.idade }}
+                </a>
             </li>
         {% endfor %}
     </ul>
